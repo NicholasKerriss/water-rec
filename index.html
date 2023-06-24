@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Recomendação de dieta</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <h1>
+        DESCUBRA SUA CORRETA INGESTÃO DE ÁGUA DIÁRIA<br />BY:
+        <span style="font-size: 16px ; font-family: 'Satisfy', cursive; color: whitesmoke; ">
+          Nicholas Kerriss, Front End developer.</span
+        >
+      </h1>
+      <p>
+       <span style="font-size: 16px;" > No campo de seleção a baixo, marque as opções que mais se encaixam com
+        seu perfil,<br> e descubra a melhor indicação de ingestão de água para voce!
+      </p></span>
+    </header>
+    <section class="section-introduction">
+      <p>Marque as opções a seguir:</p>
+      <label class="label" id="sex">Sexo:</label>
+      <select class="select" id="select__sex">
+        <option disabled selected value="">Selecione</option>
+        <option value="men">Masculino</option>
+        <option value="woman">Feminino</option>
+      </select>
+      <label class="label" id="age">Idade:</label>
+      <select class="select" id="select__age">
+        <option disabled selected value="">Selecione</option>
+        <option value="9-a-13">9 a 13 anos</option>
+        <option value="14-a-18">14 a 18 anos</option>
+        <option value="19-a-70">19 a 70 anos</option>
+      </select>
+    </section>
+    <section class="section-result">
+      <label class="label" id="result">Clique para saber seu resultado:</label>
+      <button class="button-btn" id="button-result">Resultado</button><br />
+      <label class="label" id="your__result"></label>
+    </section>
+    <script src="js/script.js"></script>
+    <div class="water-drops">
+      
+    </div>
+  </body>
+</html>

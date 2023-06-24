@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #1d858c, #79b5af);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  font-size: 12px;
+  font-family: "Oswald", sans-serif;
+  z-index: 0;
+  z-index: 0;
+  /* background-image: url(../img/water2.png);
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.section-introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  font-family: "Oswald", sans-serif;
+}
+
+.section-result {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-family: "Oswald", sans-serif;
+}
+
+.button-btn {
+  border-radius: 6px;
+  padding: 2px;
+  cursor: pointer;
+  background: transparent;
+  transition: 0.5s;
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+}
+
+.button-btn:hover {
+  transform: scale(1.05, 1.05);
+  font-weight: bold;
+}
+
+.select {
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.select:hover {
+  transform: scale(1.03, 1.03);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .header,
+  .section-introduction,
+  .section-result {
+    flex-direction: column;
+  }
+  .header {
+    word-wrap: break-word;
+  }
+}

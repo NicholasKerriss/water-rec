@@ -30,3 +30,20 @@ function calculoAgua() {
   // Atualiza o texto da label com o resultado
   resultLabel.textContent = "Sua ingestão diária (em litros): " + resultado;
 }
+
+const botaoCalcular = document.getElementById("last-result");
+botaoCalcular.addEventListener("click", funcaoCalculadora);
+
+function funcaoCalculadora() {
+  const waterNumber = parseFloat(document.getElementById("water-number").value);
+  const calculatorNumber = parseFloat(
+    document.getElementById("calculator-number").value
+  );
+
+  let resultado = waterNumber * calculatorNumber;
+
+  const resultadoElement = document.getElementById("water-recomendation");
+  resultadoElement.textContent =
+    "A sua ingestão de água ideal, levando em consideração a prática de atividade física é: " +
+    resultado.toFixed(1);
+}
